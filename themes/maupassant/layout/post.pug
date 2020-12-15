@@ -37,6 +37,8 @@ block content
           != toc(page.content, {list_number: theme.toc_number})
     .post-content
       != page.content
+      a( href='https://github.com/liuyinchi/liuyinchi.github.io/edit/myblog/source'+url_for(page.source) )
+        span='编辑'
     if theme.donate.enable == true && page.donate != false
       include _widget/donate.pug
 
