@@ -46,15 +46,14 @@ tags: .md
   #### 1、无序列表
   
   ``` bash
-  //形式一
   + a
   + b
   + c
-  //形式二
+
   - d
   - e
   - f
-  //形式三
+
   * g
   * h
   * i
@@ -62,17 +61,14 @@ tags: .md
   
   以上三种形式，效果其实都是一样的：
   
-  形式一
   + a
   + b
   + c
 
-  形式二
   - d
   - e
   - f
 
-  形式三
   * g
   * h
   * i
@@ -80,11 +76,10 @@ tags: .md
   #### 2、有序列表
   
   ``` bash
-  //正常形式
   1. abc
   2. bcd
   3. cde
-  //错序效果
+
   2. fgh
   3. ghi
   5. hij
@@ -92,11 +87,10 @@ tags: .md
   
   效果如下：
   
-  //正常形式
   1. abc
   2. bcd
   3. cde
-  //错序效果
+
   2. fgh
   3. ghi
   5. hij
@@ -104,14 +98,14 @@ tags: .md
   #### 3、嵌套列表
   
   ``` bash
-  //无序列表嵌套
+
   + 123
       + abc
       + bcd
       + cde
   + 465
   + 789
-  //有序列表嵌套
+
   1. abcd
       1. abcde
       2. abcde
@@ -121,15 +115,14 @@ tags: .md
   ```
   
   效果如下：
-  
-  //无序列表嵌套
+ 
   + 123
       + abc
       + bcd
       + cde
   + 465
   + 789
-  //有序列表嵌套
+
   1. abcd
       1. abcde
       2. abcde
@@ -163,10 +156,15 @@ tags: .md
   
   效果：
   > 一级引用
+
   >> 二级引用
+  
   >>> 三级引用
+ 
   >>>> 四级引用
+  
   >>>>> 五级引用
+  
   >>>>>> 六级引用
   
   ### 五、代码块
@@ -174,7 +172,7 @@ tags: .md
   #### 1、少量代码，单行使用，直接用`包裹起来就行了
   
   ``` bash
-  ` shaoliangdaima,danhangshiyong `
+  \` shaoliangdaima,danhangshiyong \`
   ```
   
   效果：
@@ -183,13 +181,11 @@ tags: .md
   #### 2、大量代码，需要多行使用，用```包裹起来
 
   ``` bash
-  ```
 	  daliangdaima,xuyaoduohangshiyong
 	  daliangdaima,xuyaoduohangshiyong
 	  daliangdaima,xuyaoduohangshiyong
 	  daliangdaima,xuyaoduohangshiyong
 	  daliangdaima,xuyaoduohangshiyong
-  ```
   ```
   效果：
   ```
