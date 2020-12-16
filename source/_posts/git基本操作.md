@@ -3,8 +3,6 @@ title: Git基本操作
 categories: 技术
 tags: git
 ---
-  ## Git 基本操作
-
   ![git-command.jpg](https://www.runoob.com/wp-content/uploads/2015/02/git-command.jpg)
   
   ### 说明：
