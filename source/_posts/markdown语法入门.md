@@ -1,5 +1,5 @@
 ---
-title: .MD(Markdown)语法入门
+title: Markdown(.md)语法入门
 categories: 技术
 tags: markdown
 ---
@@ -144,7 +144,7 @@ tags: markdown
   ```
   
   效果：
-  > 引用内容、说明内容。在语句前面加一个 > ，注意是英文的那个右尖括号，注意空格，引用因为是一个区块，理论上是应该什么内容都可以放，比如说：标题，列表，引用等等。
+  <div style='background: #f9f9f9;border-left: 10px solid #ccc;margin: 1.5em 10px;padding: 1em 10px 1em 10px;quotes: "\201C""\201D""\2018""\2019";'>引用内容、说明内容。在语句前面加一个 > ，注意是英文的那个右尖括号，注意空格，引用因为是一个区块，理论上是应该什么内容都可以放，比如说：标题，列表，引用等等。</div>
 
   #### 2、嵌套区块
   
