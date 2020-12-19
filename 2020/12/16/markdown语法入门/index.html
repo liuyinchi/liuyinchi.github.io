@@ -1,0 +1,192 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>.MD(Markdown)语法入门 | 607</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 5.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">.MD(Markdown)语法入门</h1><a id="logo" href="/.">607</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">.MD(Markdown)语法入门</h1><div class="post-meta">2020-12-16<span> | </span><span class="category"><a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="post-content"><p>  .md即markdown文件的基本常用编写语法,是一种快速标记、快速排版语言。</p>
+<h3 id="一、基本符号：-gt"><a href="#一、基本符号：-gt" class="headerlink" title="一、基本符号：* - +. &gt;"></a>一、基本符号：* - +. &gt;</h3><p>  基本上所有的markdown标记都是基于这四个符号或组合，需要注意的是，如果以基本符号开头的标记，注意基本符号后有一个用于分割标记符和内容的空格。</p>
+<h3 id="二、标题"><a href="#二、标题" class="headerlink" title="二、标题"></a>二、标题</h3><h4 id="1-前面带-号，后面带文字，分别表示h1-h6-只到h6，而且h1下面会有一条横线"><a href="#1-前面带-号，后面带文字，分别表示h1-h6-只到h6，而且h1下面会有一条横线" class="headerlink" title="1.前面带#号，后面带文字，分别表示h1-h6,只到h6，而且h1下面会有一条横线"></a>1.前面带#号，后面带文字，分别表示h1-h6,只到h6，而且h1下面会有一条横线</h4>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 一级标题</span></span><br><span class="line"><span class="comment">## 二级标题</span></span><br><span class="line"><span class="comment">### 三级标题</span></span><br><span class="line"><span class="comment">#### 四级标题</span></span><br><span class="line"><span class="comment">##### 五级标题</span></span><br><span class="line"><span class="comment">###### 六级标题</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-相当于标签闭合"><a href="#2-相当于标签闭合" class="headerlink" title="2.相当于标签闭合"></a>2.相当于标签闭合</h4>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 一级标题 #</span></span><br><span class="line"><span class="comment">## 二级标题 ##</span></span><br><span class="line"><span class="comment">### 三级标题 ###</span></span><br><span class="line"><span class="comment">#### 四级标题 ####</span></span><br><span class="line"><span class="comment">##### 五级标题 #####</span></span><br><span class="line"><span class="comment">###### 六级标题 #####</span></span><br></pre></td></tr></table></figure>
+
+<p>  效果如下：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h3 id="三、列表"><a href="#三、列表" class="headerlink" title="三、列表"></a>三、列表</h3><h4 id="1、无序列表"><a href="#1、无序列表" class="headerlink" title="1、无序列表"></a>1、无序列表</h4>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">+ a</span><br><span class="line">+ b</span><br><span class="line">+ c</span><br><span class="line"></span><br><span class="line">- d</span><br><span class="line">- e</span><br><span class="line">- f</span><br><span class="line"></span><br><span class="line">* g</span><br><span class="line">* h</span><br><span class="line">* i</span><br></pre></td></tr></table></figure>
+
+<p>  以上三种形式，效果其实都是一样的：</p>
+<ul>
+<li>a</li>
+<li>b</li>
+<li>c</li>
+</ul>
+<ul>
+<li>d</li>
+<li>e</li>
+<li>f</li>
+</ul>
+<ul>
+<li>g</li>
+<li>h</li>
+<li>i</li>
+</ul>
+<h4 id="2、有序列表"><a href="#2、有序列表" class="headerlink" title="2、有序列表"></a>2、有序列表</h4>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1. abc</span><br><span class="line">2. bcd</span><br><span class="line">3. cde</span><br><span class="line"></span><br><span class="line">2. fgh</span><br><span class="line">3. ghi</span><br><span class="line">5. hij</span><br></pre></td></tr></table></figure>
+
+<p>  效果如下：</p>
+<ol>
+<li><p>abc</p>
+</li>
+<li><p>bcd</p>
+</li>
+<li><p>cde</p>
+</li>
+<li><p>fgh</p>
+</li>
+<li><p>ghi</p>
+</li>
+<li><p>hij</p>
+</li>
+</ol>
+<h4 id="3、嵌套列表"><a href="#3、嵌套列表" class="headerlink" title="3、嵌套列表"></a>3、嵌套列表</h4>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">+ 123</span><br><span class="line">    + abc</span><br><span class="line">    + bcd</span><br><span class="line">    + cde</span><br><span class="line">+ 465</span><br><span class="line">+ 789</span><br><span class="line"></span><br><span class="line">1. abcd</span><br><span class="line">    1. abcde</span><br><span class="line">    2. abcde</span><br><span class="line">    3. abcde</span><br><span class="line">2. bcde</span><br><span class="line">3. cdef</span><br></pre></td></tr></table></figure>
+
+<p>  效果如下：</p>
+<ul>
+<li>123<ul>
+<li>abc</li>
+<li>bcd</li>
+<li>cde</li>
+</ul>
+</li>
+<li>465</li>
+<li>789</li>
+</ul>
+<ol>
+<li>abcd<ol>
+<li>abcde</li>
+<li>abcde</li>
+<li>abcde</li>
+</ol>
+</li>
+<li>bcde</li>
+<li>cdef</li>
+</ol>
+<h3 id="四、引用说明区块"><a href="#四、引用说明区块" class="headerlink" title="四、引用说明区块"></a>四、引用说明区块</h3><p>  对某个部分做的内容做一些说明或者引用某某的话等，可以用这个语法。</p>
+<h4 id="1、正常形式"><a href="#1、正常形式" class="headerlink" title="1、正常形式"></a>1、正常形式</h4>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; 引用内容、说明内容。在语句前面加一个 &gt; ，注意是英文的那个右尖括号，注意空格，引用因为是一个区块，理论上是应该什么内容都可以放，比如说：标题，列表，引用等等。</span><br></pre></td></tr></table></figure>
+
+<p>  效果：</p>
+<blockquote>
+<p>引用内容、说明内容。在语句前面加一个 &gt; ，注意是英文的那个右尖括号，注意空格，引用因为是一个区块，理论上是应该什么内容都可以放，比如说：标题，列表，引用等等。</p>
+</blockquote>
+<h4 id="2、嵌套区块"><a href="#2、嵌套区块" class="headerlink" title="2、嵌套区块"></a>2、嵌套区块</h4>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; 一级引用</span><br></pre></td></tr></table></figure>
+
+<p>  效果：</p>
+  <div style='background: #f9f9f9;border-left: 10px solid #ccc;margin: 1.5em 10px;padding: 1em 10px 1em 10px;quotes: "\201C""\201D""\2018""\2019";'>一级引用</div>
+
+<h3 id="五、代码块"><a href="#五、代码块" class="headerlink" title="五、代码块"></a>五、代码块</h3><h4 id="1、少量代码，单行使用，直接用-包裹起来就行了"><a href="#1、少量代码，单行使用，直接用-包裹起来就行了" class="headerlink" title="1、少量代码，单行使用，直接用`包裹起来就行了"></a>1、少量代码，单行使用，直接用`包裹起来就行了</h4>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">` shaoliangdaima,danhangshiyong `</span><br></pre></td></tr></table></figure>
+
+<p>  效果：<br>  <code>shaoliangdaima,danhangshiyong</code></p>
+<h4 id="2、大量代码，需要多行使用，用-包裹起来"><a href="#2、大量代码，需要多行使用，用-包裹起来" class="headerlink" title="2、大量代码，需要多行使用，用```包裹起来"></a>2、大量代码，需要多行使用，用```包裹起来</h4>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">daliangdaima,xuyaoduohangshiyong</span><br><span class="line">daliangdaima,xuyaoduohangshiyong</span><br><span class="line">daliangdaima,xuyaoduohangshiyong</span><br><span class="line">daliangdaima,xuyaoduohangshiyong</span><br><span class="line">daliangdaima,xuyaoduohangshiyong</span><br></pre></td></tr></table></figure>
+<p>  效果：<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">daliangdaima,xuyaoduohangshiyong</span><br><span class="line">daliangdaima,xuyaoduohangshiyong</span><br><span class="line">daliangdaima,xuyaoduohangshiyong</span><br><span class="line">daliangdaima,xuyaoduohangshiyong</span><br><span class="line">daliangdaima,xuyaoduohangshiyong</span><br></pre></td></tr></table></figure></p>
+<h3 id="六、链接"><a href="#六、链接" class="headerlink" title="六、链接"></a>六、链接</h3><h4 id="1、行内式"><a href="#1、行内式" class="headerlink" title="1、行内式"></a>1、行内式</h4><p>  链接的文字放在[]中，链接地址放在随后的()中，链接也可以带title属性，链接地址后面空一格，然后用引号引起来</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[github](https://www.github.com <span class="string">&quot;代码开源社区&quot;</span>),</span><br><span class="line">github是共产主义在软件开发领域的具体实现样板之一，即以生产资料社会公有制为基础（代码开源），以社会化合作（离散化的个人、组织等社会颗粒）为生产方式，主要采用合作社组织形式（项目组）的技术支撑平台。</span><br></pre></td></tr></table></figure>
+
+<h4 id="2、参数式"><a href="#2、参数式" class="headerlink" title="2、参数式"></a>2、参数式</h4><p>  链接的文字放在[]中，链接地址放在随后的:后，链接地址后面空一格，然后用引号引起来</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[github]:https://www.github.com <span class="string">&quot;代码开源社区&quot;</span>, </span><br><span class="line">是共产主义在软件开发领域的具体实现样板之一，即以生产资料社会公有制为基础（代码开源），以社会化合作（离散化的个人、组织等社会颗粒）为生产方式，主要采用合作社组织形式（项目组）的技术支撑平台。</span><br><span class="line">[github]:https://www.github.com <span class="string">&#x27;代码开源社区&#x27;</span>,</span><br><span class="line">是共产主义在软件开发领域的具体实现样板之一，即以生产资料社会公有制为基础（代码开源），以社会化合作（离散化的个人、组织等社会颗粒）为生产方式，主要采用合作社组织形式（项目组）的技术支撑平台。</span><br><span class="line">[github]:https://www.github.com (代码开源社区),</span><br><span class="line">是共产主义在软件开发领域的具体实现样板之一，即以生产资料社会公有制为基础（代码开源），以社会化合作（离散化的个人、组织等社会颗粒）为生产方式，主要采用合作社组织形式（项目组）的技术支撑平台。</span><br><span class="line">[github]:&lt;https://www.github.com <span class="string">&quot;代码开源社区&quot;</span>&gt;,</span><br><span class="line">是共产主义在软件开发领域的具体实现样板之一，即以生产资料社会公有制为基础（代码开源），以社会化合作（离散化的个人、组织等社会颗粒）为生产方式，主要采用合作社组织形式（项目组）的技术支撑平台。 </span><br></pre></td></tr></table></figure>
+
+<p>  两者效果都是：<br>  <a target="_blank" rel="noopener" href="https://www.github.com/" title="代码开源社区">github</a>,是共产主义在软件开发领域的具体实现样板之一，即以生产资料社会公有制为基础（代码开源），以社会化合作（离散化的个人、组织等社会颗粒）为生产方式，主要采用合作社组织形式（项目组）的技术支撑平台。</p>
+<h3 id="七、图片"><a href="#七、图片" class="headerlink" title="七、图片"></a>七、图片</h3><h4 id="1、行内式-1"><a href="#1、行内式-1" class="headerlink" title="1、行内式"></a>1、行内式</h4><p>  和链接的形式差不多，图片的名字放在[]中，图片地址放在随后的()中，title属性（图片地址后面空一格，然后用引号引起来）,注意的是[]前要加上!</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![github.png](https://dss0.bdstatic.com/6Ox1bjeh1BF3odCf/it/u=593140000,1704329025&amp;fm=218&amp;app=92&amp;f=PNG?w=121&amp;h=75&amp;s=6BE43A629ED797B53DA9AC8403008091 <span class="string">&quot;github&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h4 id="2、参数式-1"><a href="#2、参数式-1" class="headerlink" title="2、参数式"></a>2、参数式</h4><p>  图片的文字放在[]中，图片地址放在随后的:后，title属性（图片地址后面空一格，然后用引号引起来）,注意引用图片的时候在[]前要加上!</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">![github.png]:https://dss0.bdstatic.com/6Ox1bjeh1BF3odCf/it/u=593140000,1704329025&amp;fm=218&amp;app=92&amp;f=PNG?w=121&amp;h=75&amp;s=6BE43A629ED797B53DA9AC8403008091 <span class="string">&quot;github&quot;</span></span><br><span class="line"></span><br><span class="line">![github.png]:https://dss0.bdstatic.com/6Ox1bjeh1BF3odCf/it/u=593140000,1704329025&amp;fm=218&amp;app=92&amp;f=PNG?w=121&amp;h=75&amp;s=6BE43A629ED797B53DA9AC8403008091 <span class="string">&#x27;github&#x27;</span></span><br><span class="line"></span><br><span class="line">![github.png]:https://dss0.bdstatic.com/6Ox1bjeh1BF3odCf/it/u=593140000,1704329025&amp;fm=218&amp;app=92&amp;f=PNG?w=121&amp;h=75&amp;s=6BE43A629ED797B53DA9AC8403008091 (<span class="string">&quot;github&quot;</span>)</span><br><span class="line"></span><br><span class="line">![github.png]:&lt;https://dss0.bdstatic.com/6Ox1bjeh1BF3odCf/it/u=593140000,1704329025&amp;fm=218&amp;app=92&amp;f=PNG?w=121&amp;h=75&amp;s=6BE43A629ED797B53DA9AC8403008091&gt; <span class="string">&quot;github&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>  两者效果都是：<br>  <img src="https://dss0.bdstatic.com/6Ox1bjeh1BF3odCf/it/u=593140000,1704329025&fm=218&app=92&f=PNG?w=121&h=75&s=6BE43A629ED797B53DA9AC8403008091" alt="github.png" title="github"></p>
+<h3 id="八、分割线"><a href="#八、分割线" class="headerlink" title="八、分割线"></a>八、分割线</h3><p>  分割线可以由* - _（星号，减号，底线）这3个符号的至少3个符号表示，注意至少要3个，且不需要连续，有空格也可以</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">- - -</span><br><span class="line">------</span><br><span class="line">***</span><br><span class="line">* * *</span><br><span class="line">******</span><br><span class="line">___</span><br><span class="line">_ _ _</span><br><span class="line">______</span><br></pre></td></tr></table></figure>
+
+<h2 id="效果都是："><a href="#效果都是：" class="headerlink" title="  效果都是："></a>  效果都是：</h2><h3 id="九、其他"><a href="#九、其他" class="headerlink" title="九、其他"></a>九、其他</h3><h4 id="1、强调字体"><a href="#1、强调字体" class="headerlink" title="1、强调字体"></a>1、强调字体</h4><p>  一个星号或者是一个下划线包起来，会转换为&lt;em&gt;倾斜，如果是2个，会转换为&lt;strong&gt;加粗</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*md*    </span><br><span class="line">**md**</span><br><span class="line">_md_   </span><br><span class="line">__md__</span><br></pre></td></tr></table></figure>
+
+<p>  效果：<br>  <em>md</em><br>  <strong>md</strong><br>  <em>md</em><br>  <strong>md</strong></p>
+<h4 id="2、转义"><a href="#2、转义" class="headerlink" title="2、转义"></a>2、转义</h4><p>  基本上和js转义一样,\加需要转义的字符</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">\\</span><br><span class="line">\*</span><br><span class="line">\+</span><br><span class="line">\-</span><br><span class="line">\`</span><br><span class="line">\_</span><br></pre></td></tr></table></figure>
+
+<h4 id="3、删除线"><a href="#3、删除线" class="headerlink" title="3、删除线"></a>3、删除线</h4><p>  用~~把需要显示删除线的字符包裹起来</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~删除~~</span><br></pre></td></tr></table></figure>
+
+<p>  效果：<br>  <del>删除</del></p>
+<h3 id="十、表格"><a href="#十、表格" class="headerlink" title="十、表格"></a>十、表格</h3>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">|123|234|345|</span><br><span class="line">|:-|:-:|-:|</span><br><span class="line">|abc|bcd|cde|</span><br><span class="line">|abc|bcd|cde|</span><br><span class="line">|abc|bcd|cde|</span><br><span class="line"></span><br><span class="line">|123|234|345|</span><br><span class="line">|:---|:---:|---:|</span><br><span class="line">|abc|bcd|cde|</span><br><span class="line">|abc|bcd|cde|</span><br><span class="line">|abc|bcd|cde|</span><br><span class="line"></span><br><span class="line">123|234|345</span><br><span class="line">:-|:-:|-:</span><br><span class="line">abc|bcd|cde</span><br><span class="line">abc|bcd|cde</span><br><span class="line">abc|bcd|cde</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>表格的格式不一定要对的非常起，但是为了良好的变成风格，尽量对齐是最好的</p>
+</li>
+<li><p>分割线后面的冒号表示对齐方式，写在左边表示左对齐，右边为右对齐，两边都写表示居中</p>
+<p>效果如下：</p>
+<table>
+<thead>
+<tr>
+<th align="left">123</th>
+<th align="center">234</th>
+<th align="right">345</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">abc</td>
+<td align="center">bcd</td>
+<td align="right">cde</td>
+</tr>
+<tr>
+<td align="left">abc</td>
+<td align="center">bcd</td>
+<td align="right">cde</td>
+</tr>
+<tr>
+<td align="left">abc</td>
+<td align="center">bcd</td>
+<td align="right">cde</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">123</th>
+<th align="center">234</th>
+<th align="right">345</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">abc</td>
+<td align="center">bcd</td>
+<td align="right">cde</td>
+</tr>
+<tr>
+<td align="left">abc</td>
+<td align="center">bcd</td>
+<td align="right">cde</td>
+</tr>
+<tr>
+<td align="left">abc</td>
+<td align="center">bcd</td>
+<td align="right">cde</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">123</th>
+<th align="center">234</th>
+<th align="right">345</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">abc</td>
+<td align="center">bcd</td>
+<td align="right">cde</td>
+</tr>
+<tr>
+<td align="left">abc</td>
+<td align="center">bcd</td>
+<td align="right">cde</td>
+</tr>
+<tr>
+<td align="left">abc</td>
+<td align="center">bcd</td>
+<td align="right">cde</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+<h3 id="注：由于个别样式与博客样式冲突，效果与实际不符。请以Markdown为准"><a href="#注：由于个别样式与博客样式冲突，效果与实际不符。请以Markdown为准" class="headerlink" title="注：由于个别样式与博客样式冲突，效果与实际不符。请以Markdown为准"></a>注：由于个别样式与博客样式冲突，效果与实际不符。请以<a target="_blank" rel="noopener" href="http://markdown.p2hp.com/index.html" title="中文网">Markdown</a>为准</h3><a target="_blank" rel="noopener" href="https://github.com/liuyinchi/liuyinchi.github.io/edit/myblog/source/_posts/markdown%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8.md"><span>编辑</span></a></div><div class="tags"><a href="/tags/markdown/"><i class="fa fa-tag"></i>markdown</a></div><div class="post-nav"><a class="next" href="/2020/12/16/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">Git基本操作</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://example.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a><span class="category-list-count">1</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/markdown/" style="font-size: 15px;">markdown</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/12/16/markdown%E8%AF%AD%E6%B3%95%E5%85%A5%E9%97%A8/">.MD(Markdown)语法入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/16/git%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">Git基本操作</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/16/%E7%AC%AC%E4%B8%80%E6%AC%A1/">第一次写博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/12/15/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">607.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
