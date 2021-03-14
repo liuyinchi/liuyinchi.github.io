@@ -169,13 +169,13 @@ tags: markdown
   
   #### 2、大量代码，需要多行使用，用```包裹起来
 
-  ``` bash
+  \``` bash
 	  daliangdaima,xuyaoduohangshiyong
 	  daliangdaima,xuyaoduohangshiyong
 	  daliangdaima,xuyaoduohangshiyong
 	  daliangdaima,xuyaoduohangshiyong
 	  daliangdaima,xuyaoduohangshiyong
-  ```
+  \```
   效果：
   ```
   	  daliangdaima,xuyaoduohangshiyong
