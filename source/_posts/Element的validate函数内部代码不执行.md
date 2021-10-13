@@ -1,6 +1,7 @@
 ---
 title: Element的validate函数内部代码不执行
 categories: 问题
+date: 2021-4-16
 tags: 已解决
 ---
   
