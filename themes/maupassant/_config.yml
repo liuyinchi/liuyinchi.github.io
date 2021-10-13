@@ -99,8 +99,8 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
 links:
   - title: github
     url: https://github.com/liuyinchi
-  - title: site-name2
-    url: http://www.example2.com/
+  - title: gitee
+    url: https://gitee.com/silverpool
   - title: site-name3
     url: http://www.example3.com/
 
