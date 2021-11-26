@@ -1,3 +1,9 @@
+---
+title: express笔记
+categories: 技术
+tags: express
+date: 2021-11-26
+---
 ## express笔记
 
 #### 一、express安装
@@ -118,7 +124,7 @@ http://localhost:8080/login?goods=0001&detail=0001
 
 form表单进行post请求，enctype属性一般设置为“application/x-www-form-urlencoded”，如果设置成multipart/form-data，则多用于文件上传
 
-<form action="#" method="post" enctype="application/x-www-form-urlencoded"> </form>
+`<form action="#" method="post" enctype="application/x-www-form-urlencoded"></form>`
 
 使用npm提供的body-parser或者connect-multiparty来获取post数据
 
