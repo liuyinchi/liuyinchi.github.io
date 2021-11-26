@@ -2,6 +2,7 @@
 title: Git基本操作
 categories: 技术
 tags: git
+date: 2021-4-16
 ---
   ![git-command.jpg](https://www.runoob.com/wp-content/uploads/2015/02/git-command.jpg)
   

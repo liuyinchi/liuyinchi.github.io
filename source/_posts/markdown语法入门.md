@@ -2,6 +2,7 @@
 title: Markdown(.md)语法入门
 categories: 技术
 tags: markdown
+date: 2021-4-16
 ---
   .md即markdown文件的基本常用编写语法,是一种快速标记、快速排版语言。
   
